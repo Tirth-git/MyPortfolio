@@ -1,0 +1,149 @@
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin: 20px;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: 2px solid #00ff99;
+  border-radius: 6px;
+  color: #00ff99;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #00ff99;
+  color: #000;
+}
+
+/* Project Detail Page */
+.project-detail {
+  text-align: center;
+}
+
+.project-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00ff99;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: color 0.4s ease-in-out;
+  position: relative;
+}
+
+/* Underline */
+.project-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 100%;
+  background-color: #00ff99;
+  box-shadow: 0 0 4px #00ff99; /* subtle glow */
+  transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover: both change together */
+.project-title:hover {
+  color: #00ffcc;
+}
+
+.project-title:hover::after {
+  background-color: #00ffcc;
+  box-shadow: 0 0 6px #00ffcc; /* slightly stronger glow */
+}
+
+/* Scanning underline animation */
+@keyframes scan {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.project-images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.project-images img {
+  width: 48%;
+  border: 2px solid #00ff99;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ff99;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.github-btn {
+  display: inline-block;
+  border: 2px solid #00ff99;
+  color: #00ff99;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #00ff99;
+  color: #000;
+}
+.project-image-card {
+  margin-bottom: 20px;
+  display: flex;             
+  justify-content: center;       
+  align-items: center;          
+  width: fit-content;            
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #00ff99;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00ff99;
+  padding: 0;
+}
+
+.project-image-card img {
+  width: 950px;         
+  height: 550px;
+  object-fit: fill;
+  border-radius: 8px;
+  border: none;
+  box-shadow: none;
+}
+
+/* Project Descryption */
+
+/* Blog-like text style */
+.project-description {
+  font-family: 'Merriweather', serif; /* Elegant blog font */
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: justify;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+
+/* Drop cap effect */
+
+.project-description::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+  color: #00ff99; /* Matches your theme green */
+  text-shadow: 0 0 8px #00ff99;
+}
