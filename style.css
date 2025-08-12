@@ -382,3 +382,49 @@ footer {
 .logo-link:hover {
   color: #00ff7f; /* optional hover effect */
 }
+
+/* Education Section Upgrade */
+.edu-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.edu-card {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85);
+  border: 2px solid #00ff7f;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 15px #00ff7f;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00ff7f, 0 0 40px #00ff7f;
+}
+
+.edu-icon {
+  font-size: 2rem;
+  color: #00ff7f;
+  margin-right: 1rem;
+}
+
+.edu-content h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00ff7f;
+}
+
+.edu-content p {
+  margin: 0.2rem 0;
+  color: white;
+}
+
+.edu-year {
+  font-size: 0.9rem;
+  color: #bbb;
+}
